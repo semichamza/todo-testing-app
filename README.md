@@ -1,6 +1,4 @@
-TODO APP
-
-# Spring Boot, Embedded MongoDB, Angular Restful API
+![alt text](https://image.prntscr.com/image/pK6o2uDrRaWFt47v5ho31g.png)
 
 Todo App with Spring Boot & MongoDB in the Backend and Angular in the frontend.
 
