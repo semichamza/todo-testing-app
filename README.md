@@ -1,6 +1,6 @@
 ![alt text](https://image.prntscr.com/image/pK6o2uDrRaWFt47v5ho31g.png)
 
-Todo App with Spring Boot & MongoDB in the Backend and Angular in the frontend.
+Simple TODO app with Spring Boot and Angular 
 
 ## Requirements
 
@@ -32,9 +32,6 @@ Alternatively, you can run the app without packaging it using -
 mvn spring-boot:run
 ```
 
-**2.1 You can also just load the project as maven project in IntelliJ and make sure you have Maven 3 bundled and Java 1.8 set up as project jdk, and just run the backend app. 
-
-The backend server will start at <http://localhost:8080>.
 
 **3. Run the frontend app using npm**
 
