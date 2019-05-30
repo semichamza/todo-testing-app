@@ -1,0 +1,55 @@
+<div class="container">
+
+    <div class="text-center">
+        <h2>Todos Test Application</h2>
+    </div>
+
+    <hr/>
+
+    <div class="text-center">
+        <h4>Add new TODO</h4>
+
+        <button  (click)="openDialog()" color="primary" mat-mini-fab aria-label="Add new Todo">
+            <mat-icon>add</mat-icon>
+        </button>
+
+    </div>
+
+    <br/>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col"> <mat-checkbox class="example-margin"
+                                               [(ngModel)]="multipleDelete"></mat-checkbox></th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Time of the event</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let todo of todos">
+                <td><mat-checkbox [hidden]="!multipleDelete" [(ngModel)]="todo.checked"></mat-checkbox></td>
+                <td>{{todo.title}}</td>
+                <td>{{todo.description}}</td>
+                <td>{{todo.timeOfTheEvent | date}}</td>
+                <td>
+                    <a (click)="openDialog(todo)">
+                        <i class="material-icons edit">edit</i>
+                    </a>
+                    <a [hidden]="multipleDelete" (click)="deleteTodo(todo.id)">
+                        <i class="material-icons delete">clear</i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button [hidden]="!multipleDelete" (click)="deleteMultipleTodos()"
+            mat-mini-fab aria-label="Delete all">
+        <mat-icon>delete</mat-icon>
+    </button>
+    
+
+</div>
