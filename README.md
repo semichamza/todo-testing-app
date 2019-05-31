@@ -1,4 +1,4 @@
-![alt text](https://image.prntscr.com/image/pK6o2uDrRaWFt47v5ho31g.png)
+![alt text](https://image.prntscr.com/image/PXeQpqzCQb29Zq6gHLcsXw.png)
 
 Simple TODO app with Spring Boot and Angular 
 
